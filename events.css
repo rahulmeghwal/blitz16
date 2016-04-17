@@ -1,0 +1,241 @@
+#main-title{
+	position:absolute;
+	background-image: url(images/blitzschlag1611.png);
+	width: 750px;
+	height: 167px;
+    margin: auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    background-size: contain;
+    transform:scale(0.9);
+    }
+#lined{
+	position:absolute;
+	top:40%;
+    left:20%;
+	width:58%;
+	background-color: #fff;
+	height: 2px;
+}
+body{
+    
+    overflow-x: hidden;
+}
+.home{
+    position:absolute;
+    top: 0%;
+}
+.events{
+    margin-top: 100px;
+    position: fixed;
+    top: 100%;
+    left: 2%;
+    width: 96%;
+    height: auto;
+}
+.scene {
+  position:fixed;
+  left: -8.5%;
+  top: -10%;
+  padding: 0;
+  margin: 0;
+    z-index: -1000;
+  background-size:contain;
+}
+#go-button-down{
+	
+	cursor: pointer;
+	width:42px;
+    height: 42px;
+	position: fixed;
+	text-align: center;
+	font-size: 35px;
+	color: #fff;
+	top: 90%;
+    left: 47%;
+	padding: 2px;
+	border-radius:5px; 
+	font-family: Agency FB;
+	font-weight: bold;
+}
+#go-button-up{
+	
+	cursor: pointer;
+	width:42px;
+    height: 42px;
+	position: fixed;
+	text-align: center;
+	font-size: 35px;
+	color: #fff;
+	top:190%;
+    left: 47%;
+	padding: 2px;
+	border-radius:5px; 
+	font-family: Agency FB;
+	font-weight: bold;
+}
+
+
+.eveimg{
+	margin-right:40px;
+	margin:bottom:40px;
+	cursor: pointer;
+	width:130px;
+    	height:130px;
+	text-align: center;
+	font-size: 35px;
+	color: #fff;
+	padding: 2px;
+}
+
+#button-ur{
+	position: fixed;
+	top: 20px;
+	left: 40px;
+	font-size: 30px;
+	color: #fff;
+	list-style: none;
+	display:flex;
+	text-align:center;
+
+}
+
+#fb, #gplus{
+	
+	border:2px solid #fff;
+	width:35px;
+	height:35px;
+	border-radius:17.5px;
+	cursor:pointer;
+	margin-left:10px;
+	transform:scale(0.9);
+}
+
+/*#main-title { transition: all .2s ease-in-out; }
+#main-title:hover { transform: scale(.1); }
+*/
+#go-button  { transition: all .2s ease-in-out; 
+	z-index:0.5;
+}
+.day{
+	
+	text-align: center;
+	position:relative;
+	margin-top: 50px;
+	cursor:pointer;
+	border: 5px solid white;
+	width:30%;
+	height:100px;
+	padding:20px;
+	font-weight:bold;
+	font-size:30px;
+	color:white
+}
+.day:hover {
+   	color: #fff;
+	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+	box-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+	
+   }
+
+
+
+
+#fb  { transition: all .1s ease-in-out; }
+#gplus { transition: all .1s ease-in-out; }
+#go-button:hover { transform: scale(1.1); }
+.eveimg  { transition: all .2s ease-in-out; 
+	z-index:0.5;
+}
+.eveimg:hover { transform: scale(1.5); }
+
+#fb:hover { transform: scale(1.1); }
+#gplus:hover { transform: scale(1.1); }
+
+#all-buttons{
+	position: fixed;
+	font-family: Agency FB;
+	bottom: 10%;
+	color: #fff;
+	
+
+}
+
+#all-buttons div{
+	text-align: center;
+	font-size: 32px;
+	border: 1px solid #fff;
+	padding: 2px;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+#comp{
+	position: inherit;
+	left:46%;
+	 
+}
+#sche{
+	position: inherit;
+	right:20%;
+}
+#blitzsmall{
+	position: fixed;
+	top: 35px;
+	left: -200px;
+	border:1px solid #fff;
+	opacity: 0;
+}
+#ABOUT{
+	opacity: 0;
+	position: inherit;
+	color: #fff;
+	left:15%;
+	width:70%;
+	top: 45%;
+	font-family: Agency FB;
+	font-size: 22px;
+}
+#mnit-info{
+	position: fixed;
+	top:-50px;
+	right:-250px;
+	transform:scale(0.5);
+}
+.blackandwhite { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+#sponsors{
+	position: fixed;
+	top: 40%;
+	left:19%;
+}
+
+.sponsor{
+
+	height: 30px;
+	width:auto;
+}
+#cocacola{
+	height: 80px;
+}
+#airtel{
+	height: 60px;
+}
+#microsoft{
+	height: 50px;
+}
+#paytm{
+	height: 45px;
+}
+#sbi{
+	margin-left: 10px;
+}
+video   {
+min-width: 100%;
+min-height: 100%;
+width: 108%;
+height: auto;
+z-index: -1000;
+background:url(images/orig.jpg) no-repeat;
+background-size: cover;
+}

@@ -1,0 +1,725 @@
+<head>
+    <meta name="description" content="BLITZSCHLAG'16 THE BIGGEST FEST IN JAIPUR" />
+    <meta name="author" content="Parth Gupta, Rahul Meghwal" />
+    <meta http-equiv="refresh" content="420">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Blitzschlag'16</title>
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="index-style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style7.css">
+    <link rel="stylesheet" type="text/css" href="css/light.css">
+    
+    <link rel="stylesheet" href="css/team/style.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/team/common.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/team/thirdeffect.css" type="text/css" media="screen"/>
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+	<style>
+        #map1{
+        position: absolute;
+        height: 70%;
+        width: 40%;
+        left: 5%;
+        top: 20%;
+    }
+        #cacs{
+            color:white;
+            font-size:27px;
+            z-index:0;
+            font-family: Agency FB;
+            margin-top:35px;
+        }
+        #canvas{
+            position:absolute;
+            top:0px;
+            height:100%;
+            width:100% 
+        }
+        #abt{
+            height: 80%;
+            background:rgba(0,0,0,0.5);
+            content: '';
+        }
+        #contus{
+            background:black;
+            height: 82%;
+            background:rgba(0,0,0,0.5);
+        }
+        #abth,#cont,#loca{
+            color:white;
+            font-size:50px;
+            z-index:0;
+            margin-top:10px;
+            font-family: Agency FB;
+            font-weight: bold;
+        }
+        #abtt{
+            color:white;
+            font-size:25px;
+            z-index:0;
+            font-family: Agency FB;
+            margin:10%;
+            margin-top:30px;
+        }
+		
+		
+	</style>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				navigation: true,
+				navigationPosition: 'right',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
+</head>
+<body class="demo">
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    
+<div id="fullpage">
+	<div class="section " id="section0">
+        <canvas id="canv"></canvas>
+		<ul id="scene1" class="scene" >
+			<li class="layer" data-depth="0.15"><img id="bg" src="images/spacenew.jpg"></li>
+			<li class="layer" id="cloud3" data-depth="0.20"><img src="images/31.png"></li>
+			<li class="layer" id="cloud1" data-depth="0.10"><img src="images/21.png"></li>
+		</ul>
+        
+        <div><a target="_blank" href="http://mnit.ac.in"><img id="mnitlogo" src="images/mnitlogo.png"></a></div>
+        <div><a  href="index.html"><img id="blzlogo" src="images/blitzlogo.png"/></a></div>
+		
+		<div id="main-title"></div>
+        	<div id="sdate">8<sup>th</sup>- 10<sup>th</sup> April</div>
+		<div id="linedu"></div>
+		<div id="timer">
+            <div id="linetu"></div>
+            <ul id="count">
+                <li id="day"><div id="daysC"></div><div id="days">Days</div> </li>
+                <li id="hour"><div id="hoursC"></div><div id="hours">Hours</div> </li>
+                <li id="minute"><div id="minutesC"></div><div id="minutes">Minutes</div></li>
+                <li id="second"><div id="secondsC"></div><div id="seconds">Seconds</div> </li>
+            </ul>            
+            <div id="linetd"></div>
+            
+        </div>
+		
+        
+		<div><img id="go-button-down" src="images/downarrow.png"></div>
+        </div>
+	<div class="section" id="section1">
+        
+        <div ><a href="index.html"><img id="blitzsmall" src="images/blitzsmall.png"></a></div>    
+        <div ><a target="_blank" href="http://mnit.ac.in"><img id="mnitsmall" src="images/mnitsmall.png"></a></div>    
+        <div class="content">
+    
+                <ul class="bmenu">
+                    <li><a  id="events" href="#" class="active">Events</a></li>
+                    <li><a  id="workshops" href="#">Workshops</a></li>
+                    <li><a  id="schedule" href="#">Schedule</a></li>
+                    <li><a  id="sponsors" href="#">Sponsors</a></li>
+                    <li><a  id="teams" href="#">Our Team</a></li> 
+                    <li><a id="acc" target="_blank" href="https://cacs.typeform.com/to/TMSwWg">Accomodation</a></li>
+                </ul>
+        </div>
+        <div class="data">
+            <div id='eventsopen' class="bmenu2">
+                <ul>
+                <li id="head">EVENTS</li>
+                <li style="cursor:pointer" id="eventshome">[ BACK ]</li>
+                
+                <li id="linemain"></li>
+               <li id="page">
+                      <div id="technical">Technical Events</div>
+                    <div id="technicaldata">
+                        <ul>
+			    <li id="cp">COMPUTER ENGG</li>
+                <li id="ec">ELECTRONICS ENGG</li>
+			    <br>
+                <li id="mech">MECHANICAL ENGG</li>
+                <li id="ee">ELECTRICAL ENGG</li>
+                <br>
+                <li id="ce">CIVIL ENGG</li>
+                <li id="ch">CHEMICAL ENGG</li>
+                <br>
+			    <li id="meta">METALLURGY ENGG</li> 
+			    <li id="robo">ROBOTSAV</li>
+                        </ul>
+                    </div>
+                    <div id="chdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/hqioaz"><li id="poster">Poster Presentation</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/gc0eHp"><li id="visco">Viscometer</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/vCIjlb"><li id="cp">Chem-Quiz</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/Hh3kwS"><li id="ec">Chem Cars</li></a>
+                        </ul>
+                    </div>
+                    <div id="cedata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/lNBNzh"><li id="civisim">Civi-Symposium 2016</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/Hpsxys"><li id="pygmy">PYGMY Barrier</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/kSmxik"><li id="aqua">Aqua Judge</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/ddQ8HE"><li id="buildit">Build It</li></a>
+                        </ul>
+                    </div>
+                    <div id="cpdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/HuwfMZ"><li id="app">APP-A-CREATE</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/UxCe1k"><li id="code">Code-Geeks</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/KFa2Rm"><li id="crypto">Crypto-Gram</li></a>
+                        </ul>
+                    </div>
+                    <div id="mechdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/LqmgUu"><li id="app">Hydraulic Arm</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/rHCoxt"><li id="code">BALLISTA</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/JcCrhw"><li id="crypto">INVENTO</li></a>
+                        </ul>
+                    </div>
+                    <div id="eedata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/fTw6Bk"><li id="jugaad">JUGAAD</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/vUzZ2p"><li id="strom">Strommarkt</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/e8Usx7"><li id="quizathon">QUIZ-A-THON</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/ejCtOC"><li id="circart">CIR-KART</li></a>
+                        </ul>
+                    </div>
+                    
+                    <div id="ecdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/AkUFKF"><li id="circuit">Circuit Mania</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/DFLfOV"><li id="poster">Poster Presentation</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/t5Ie4m"><li id="quizical">Let's Get QuizZical</li></a>
+                        </ul>
+                    </div>
+                    <div id="metadata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/p4xeh6"><li id="design">Design Problem</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/pEhaKL"><li id="poster">Metvidz</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/BU38XL"><li id="poster">Material's Hunt</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/Izdadg"><li id="paper">Paper Presentation</li></a>
+                        </ul>
+                    </div>
+		     <div id="robodata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/q99NJY"><li id="hic">Hell In a Cell</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/hXagcN"><li id="fl">Fastlane</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/mNM9YR"><li id="fh">Frodo Hockey</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/jPHDwJ"><li id="str">Salvator</li></a>
+                        </ul>
+			 <div id="zine"><a target="_blank" href="http://zine.co.in">For More Info Click Here</a></div>
+                    </div>
+                    <div id="bar"></div>
+                    <div id="cultural">Cultural Events</div>
+                    <div id="culturaldata">
+                        <ul>
+                            <li id="pronites">PRO-NIGHTS</li>
+                            <li id="music">MUSIC</li>
+                            <li id="battle">FILM FESTIVAL</li>
+                            <br>
+                            <li id="finearts">FINEARTS</li>
+                            <li id="litraryens">LITRARYENS</li>
+                            <li id="dramatics">DRAMATICS</li>
+                            <br>
+                            <li id="labywrinth">LAN GAMING</li>
+                            <li id="concevor">CONCEVOIR</li>
+                            <a target="_blank" href="https://cacs.typeform.com/to/xwot3c"><li  id="mquiz">QUIZ</li></a>
+                            <br>
+                            <li id="highlights">HIGHLIGHTS</li>
+                            <a target="_blank" href="mun/index.html"><li id="mun">MUN</li></a>
+                        </ul>
+                    </div>
+                <div id="highdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/VgOZtK"><li  id="mfi">MAKE FOR INDIA</li></a>
+                        </ul>
+                </div>
+                <div id="prodata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/cwzNaY"><li  id="ramsam">RAMBA SAMBA</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/WxlpAC"><li  id="panache">PANACHE</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/rAj8vc"><li  id="bob">BATTLE OF BANDS</li></a>
+                        </ul>
+                    </div>
+                 <div id="battledata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/owSHEn"><li  id="moments">MOMENTS</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/FiPMuX"><li  id="72hrs">72&nbsp;HRS</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/dS7HWv"><li  id="moods">MOODS</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/CZzzSi"><li  id="cutshots">SCRIBBLE</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/nlII5f"><li  id="lcs">LIGHTS CAMERA SHOOT</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/SFKJ5H"><li  id="cutshots">CUTSHOTS</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/dnGqfM"><li  id="philm">PHILMPANTI</li></a>
+                        </ul>
+                    </div>
+                    <div id="fineartsdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/G54fD8"><li  id="sop">SOAPOHOLIC</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/DfSOpK"><li  id="finp">FINGER PAINTING</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/fyN508"><li  id="bigpic">BIG PICTURE</li></a>
+                        </ul>
+                    </div>
+                    <div id="litraryensdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/nfCffg"><li  id="debate">DEBATE</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/axyY1s"><li  id="poetry">RHETORICS</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/KT5fTF"><li  id="scrib">TINY TALES</li></a>
+                        </ul>
+                    </div>
+                    <div id="dramaticsdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/BC2joL"><li  id="tam">TAMASHA</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/zrWSno"><li  id="adv">ADVITIYA</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/Rj1TTW"><li  id="rang">RANGBHOOMI</li></a>
+                        </ul>
+                    </div>
+                    <div id="musicdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/V9d4ly"><li  id="taal">TAAL</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/MLyiCg"><li  id="dhun">DHUN</li></a>
+                           
+                        </ul>
+                    </div>
+                    <div id="labywrinthdata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/HSClI8"><li  id="tekken">TEKKEN 3</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/zppokl"><li  id="fifa">FIFA 14</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/St1wD1"><li  id="nfs">NFS MOST WANTED 2005</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/Tw66CZ"><li  id="cs">COUNTER STRIKE v 1.6</li></a>
+                        </ul>
+                    </div>
+                    <div id="concevordata" style="display:none">
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/IbvSuM"><li  id="klotter">KLOTTER</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/wpjWPn"><li  id="mm">MURAL MAKING</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/V5fJwe"><li  id="tshirt">T-SHIRT DESIGN</li></a>
+                            </br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/byNCpF"><li  id="ass">ACCESSORISATION</li></a>
+                            <a target="_blank" href="https://cacs.typeform.com/to/alyD4I"><li  id="cc">CASTLE CLAY</li></a>
+                        </ul>
+                    </div>
+                </li>
+                <li id="tr"><a target="_blank" href="rules/tech.pdf">Click For Technical Rules</a></li>
+                <li id="cr"><a target="_blank" href="rules/cultural.pdf">Click For Cultural Rules</a></li>
+                </ul>
+            </div>
+            <div style="display:none" id='workshopsopen' class="bmenu2">
+               <li id="head">WORKSHOPS</li>
+                <li id="linemain"></li>
+		<li id="page2">
+		       <div id="workdata">
+			<center>
+                        <ul>
+                            <a target="_blank" href="https://cacs.typeform.com/to/Lfc4Qq"><li id="aad">Android App Development</li></a>
+			    <br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/y6cfRK"><li id="iseh">Information Security and Ethical Hacking</li></a>
+                            <br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/XcZ8ew"><li id="ml">Machine Learning</li></a>
+			    <a target="_blank" href="https://cacs.typeform.com/to/sbGb4P"><li id="wr">HookerBotz</li></a>
+			    <br>
+                            <a target="_blank" href="https://cacs.typeform.com/to/THIyIe"><li id="mcr">Voice controlled Robotics</li></a>
+                        </ul>
+			</center>
+                    </div>
+		</li>
+            </div>
+             <div style="display:none" id='sponsorsopen' class="bmenu">
+                <li id="head">SPONSORS</li>
+                <li id="linemain"></li>
+                 <center style="margin-top:10%">
+                    <img src="images/sponsors/techienest_logo.png">
+                    <p style="color:white">Sponsor for ROBOTSAV</p>
+                 </center>
+            </div>
+            <div style="display:none" id='scheduleopen' class="bmenu">
+                <li id="head">SCHEDULE</li>
+                <li id="linemain"></li>
+                <center>
+                <a target="_blank" href="rules/schcul.pdf"><div style="border:1px solid #fff;border-radius:5px;font-family:Agency FB;padding:20px;font-weight:bold;font-size:30px;color:white;width:30%;margin-top:11%">CULTURAL EVENTS</div></a>
+                    <a target="_blank" href="rules/schtech.pdf"><div style="border:1px solid #fff;border-radius:5px;font-family:Agency FB;padding:20px;font-weight:bold;font-size:30px;color:white;width:30%;margin-top:5%">TECHNICAL EVENTS</div></a></center>
+            </div>
+            <div style="overflow-y:auto;display:none" id='teamsopen' class="bmenu">
+                <li id="head">OUR TEAM</li>
+                <div style="overflow-x:hidden">
+                    <center>
+                        <div style="border:1px solid #fff;border-radius:5px;font-family:Agency FB;padding:20px;font-weight:bold;font-size:30px;color:white;width:30%;margin-top:20px">ORGANISING TEAM</div>
+         <div class="main3">
+            <div class="view third-effect">
+                <img src="images/team/anm.jpg" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-97px;top:-20px" href="#">ANMOL&nbsp;KUMAR&nbsp;YADAV  2012ume1781@mnit.ac.in  +918890171501 </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        <div class="main">
+            <div style="opacity:0" class="view third-effect">
+                <img src="images/team/nem.jpg" />
+                <div class="mask">
+                    <center>
+                    <div  style="display:inline;color:white;position:absolute;left:-90px;top:-20px" href="#">NEMISH&nbsp;ROMEN&nbsp;SHAH  2013uch1011@mnit.ac.in +917568677632 </div>
+                    </center>
+                </div>
+            </div>
+            <div class="view third-effect">
+                <img src="images/team/nem.jpg" />
+                <div class="mask">
+                    <center>
+                    <div  style="display:inline;color:white;position:absolute;left:-90px;top:-20px" href="#">NEMISH&nbsp;ROMEN&nbsp;SHAH  2013uch1011@mnit.ac.in +917568677632 </div>
+                    </center>
+                </div>
+            </div>
+                <div class="view third-effect">
+                <img src="images/team/div.jpg" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-93px;top:-20px" href="#">DIVYANSH&nbsp;AGARWAL 2013umt1369@mnit.ac.in  +919460451759</div>
+                </div>
+            </div>
+             <div class="view third-effect">
+                <img src="images/team/vag.jpg" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-88px;top:-20px" href="#">VAGISHA&nbsp;SHARMA 2013uch1229@mnit.ac.in  +917568581343</div>
+                </div>
+            </div>
+            <div class="view third-effect">
+                <img src="images/team/kus.jpg" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-88px;top:-20px" href="#">KUSHAGRA&nbsp;PORWAL 2013uee1773@mnit.ac.in  +917734964102</div>
+                </div>
+            </div>
+            <div style="margin-left:3%;width:80%">
+             <div class="view third-effect">
+                <img src="images/team/nik.jpg" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-92px;top:-20px" href="#">NIKHIL&nbsp;AGRAWAL 2013uar1027@mnit.ac.in  +918302616146 </div>
+                </div>
+            </div>
+             <div class="view third-effect">
+                <img src="images/team/nam.jpg" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-88px;top:-20px" href="#">NAMIT&nbsp;PAL 2013ume1647@mnit.ac.in  +919649729885</div>
+                </div>
+            </div>
+              <div class="view third-effect">
+                <img src="images/team/dip.png" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-92px;top:-20px" href="#">DIPESH&nbsp;PURI 2013umt1748@mnit.ac.in  +918302132141</div>
+                </div>
+             </div>
+                
+            </div>
+        </div>
+    </div>
+            <div style="margin-left:29%;">
+             <div class="view third-effect">
+                <img src="images/team/ras.png" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-92px;top:-20px" href="#">RASHMI&nbsp;KUNDU 2013uec1484@mnit.ac.in  +919587331970</div>
+                </div>
+            </div>
+                 <div class="view third-effect">
+                <img src="images/team/kom.jpg" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-90px;top:-20px" href="#">KOMAL&nbsp;SAHAY 2013uee1797@mnit.ac.in  +918560858283 </div>
+                </div>
+            </div>
+            </div>
+                        <div style="border:1px solid #fff;border-radius:5px;font-family:Agency FB;padding:20px;font-weight:bold;font-size:30px;color:white;width:30%;margin-top:950px">WEB&nbsp;DEVELOPMENT TEAM</div>
+         <div class="main2">
+            <div class="view third-effect">
+                <img src="images/team/part.png" />
+                <div class="mask">
+                    <div  style="display:inline;color:white;position:absolute;left:-90px;top:-20px" href="#">PARTH&nbsp;GUPTA  2013ucp1341@mnit.ac.in  +919928529780 </div>
+                </div>
+            </div>	
+          <div class="view third-effect">
+                <img src="images/team/rah2.png" />
+                <div class="mask">
+                    <center>
+                    <div  style="display:inline;color:white;position:absolute;left:-90px;top:-20px" href="#">RAHUL&nbsp;MEGHWAL  2013ucp1513@mnit.ac.in +919413730905 </div>
+                    </center>
+                </div>
+            </div>
+            </center>
+                </div>
+            </div>
+               
+        </div>
+    </div>
+	<div class="section" id="section2">
+        <div ><a  href="index.html"><img id="blitzsmall" src="images/blitzsmall.png"></a></div>    
+        <div ><a target="_blank" href="http://mnit.ac.in"><img id="mnitsmall" src="images/mnitsmall.png"></a></div> 
+    <center>
+    <div id="abt" class="contentmy">
+		<div id="abth">BLITZSCHLAG '16</div>
+        <div  id="abtt">
+            <p style="color:white">The annual Tech-cult fest of MNIT Jaipur is fast approaching. Since its inception, Blitzschlag has epitomized the ultimate array of technical and cultural activities on an Institute platform. Youth from the entire nation is held incaptivating by the colourful milieu of technical and cultural events that team Blitzschlag conscientiously puts together for them to have the time of their lives.</p>
+            <p style="color:white">Blitzschlag has been an utopia for the young generation for them to nurture and showcase their cultural and managerial skills. In the recent past, Blitzschlag has witnessed the riproaring performance of Parikrama, the thrilling MTV Stunt Mania, campus attack by UTV Bindass and mega nights including the electrifying Ramba Samba, the exciting Panache, the hard-core Ragna Rock and the traditional Classical
+Night. We have a wide assortment of competitions that’ll cater to everyone’s expectations ranging from robolympics and junkyard wars to face painting
+and junky costumes, from debates to Dalal Street, quizzes to war of the DJs. Blitzschlag has always persevered to make each of its event a delectable delight. You are all invited to come and enjoy this 3 day extravaganza and win exciting prizes. So mates, gear yourself because its now time for Thunder and Lightning!</p>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    </center>
+	</div>
+    <div class="section" id="section3">
+        <div ><a  href="index.html"><img id="blitzsmall" src="images/blitzsmall.png"></a></div>    
+        <div ><a target="_blank" href="http://mnit.ac.in"><img id="mnitsmall" src="images/mnitsmall.png"></a></div>
+        
+        <div id="map1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.210333073549!2d75.80782545364764!3d26.86505774879016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db66fe2879c7f%3A0xdfc843bf9b6f869a!2sMalaviya+National+Institute+of+Technology+Jaipur!5e0!3m2!1sen!2s!4v1457067409825" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div id="contactus">
+                <div id="cont">CONTACT US</div>
+                <div id="contline"></div>
+            
+                <div id="cacs">mnit.cacs@mnit.ac.in<br>+917734964102<br>+917568581343<br>+919649729885</div>
+                <a target="_blank" href="https://www.facebook.com/blitzschlagMNIT/"><img id="f" src="images/f.png"></a>
+                <a target="_blank" href="https://plus.google.com/u/0/118136674740855332944/posts"><img id="g" style="margin-left:50px" src="images/g.png"></a>
+        </div>
+	</div>
+        </center>
+</div>
+    <script src="deploy/parallax.js"></script>
+	<script src="scripts/jquery.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src='scripts/zepto.min.js'></script>
+    <script src='js/Stats.js'></script>
+    <script src='js/light.js'></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="js/main.js"></script>
+	
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/index.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script>
+	
+    var scene1 = document.getElementById('scene1');
+	var parallax1 = new Parallax(scene1);
+    document.firstElementChild.style.zoom = "reset";
+	
+    var scene = document.getElementById('scene');
+	var parallax1 = new Parallax(scene);
+    document.firstElementChild.style.zoom = "reset";
+	</script>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 26.86286, lng: 75.816378},
+          zoom: 17
+        });
+      }
+    </script>
+    <script src="map.js?callback=initMap"></script>
+    <script>
+      $(events).click(function(){
+          $(schedule).removeClass('active');
+          $(sponsors).removeClass('active');
+          $(workshops).removeClass('active');
+          $(teams).removeClass('active');
+          $(events).addClass('active');
+          $(scheduleopen).fadeOut(500);
+          $(sponsorsopen).fadeOut(500);
+          $(workshopsopen).fadeOut(500);
+          $(teamsopen).fadeOut(500);
+          $(eventsopen).fadeIn(1000);
+      });
+      $(schedule).click(function(){
+          $(events).removeClass('active');
+          $(sponsors).removeClass('active');
+          $(workshops).removeClass('active');
+          $(teams).removeClass('active');
+          $(schedule).addClass('active');
+          $(eventsopen).fadeOut(500);
+          $(sponsorsopen).fadeOut(500);
+          $(workshopsopen).fadeOut(500);
+          $(teamsopen).fadeOut(500);
+          $(scheduleopen).fadeIn(1000);
+      });
+      $(workshops).click(function(){
+          $(events).removeClass('active');
+          $(sponsors).removeClass('active');
+          $(schedule).removeClass('active');
+          $(teams).removeClass('active');
+          $(workshops).addClass('active');
+          $(scheduleopen).fadeOut(500);
+          $(sponsorsopen).fadeOut(500);
+          $(eventsopen).fadeOut(500);
+          $(teamsopen).fadeOut(500);
+          $(workshopsopen).fadeIn(1000);
+      });
+      $(teams).click(function(){
+          $(events).removeClass('active');
+          $(sponsors).removeClass('active');
+          $(schedule).removeClass('active');
+          $(workshops).removeClass('active');
+          $(teams).addClass('active');
+          $(scheduleopen).fadeOut(500);
+          $(sponsorsopen).fadeOut(500);
+          $(workshopsopen).fadeOut(500);
+          $(eventsopen).fadeOut(500);
+          $(teamsopen).fadeIn(1000);
+      });
+      $(sponsors).click(function(){
+          $(events).removeClass('active');
+          $(teams).removeClass('active');
+          $(schedule).removeClass('active');
+          $(workshops).removeClass('active');
+          $(sponsors).addClass('active');
+          $(scheduleopen).fadeOut(500);
+          $(eventsopen).fadeOut(500);
+          $(workshopsopen).fadeOut(500);
+          $(teamsopen).fadeOut(500);
+          $(sponsorsopen).fadeIn(1000);
+      });
+        $('#ch').click(function(){
+            $('#technicaldata').fadeOut(500);
+            $(tr).fadeOut(500);
+            $('#chdata').fadeIn(1000);
+        });
+        $('#mech').click(function(){
+            $('#technicaldata').fadeOut(500);
+            $(tr).fadeOut(500);
+            $('#mechdata').fadeIn(1000);
+        });
+        $('#ec').click(function(){
+            $('#technicaldata').fadeOut(500);
+            $(tr).fadeOut(500);
+            $('#ecdata').fadeIn(1000);
+        });
+        $('#ce').click(function(){
+            $('#technicaldata').fadeOut(500);
+            $(tr).fadeOut(500);
+            $('#cedata').fadeIn(1000);
+        });
+        $('#cp').click(function(){
+            $('#technicaldata').fadeOut(500);
+            $(tr).fadeOut(500);
+            $('#cpdata').fadeIn(1000);
+        });
+        $('#ee').click(function(){
+            $('#technicaldata').fadeOut(500);
+            $(tr).fadeOut(500);
+            $('#eedata').fadeIn(1000);
+        });
+        $('#meta').click(function(){
+            $('#technicaldata').fadeOut(500);
+            $(tr).fadeOut(500);
+            $('#metadata').fadeIn(1000);
+        });
+	$('#robo').click(function(){
+            $('#technicaldata').fadeOut(500);
+            $(tr).fadeOut(500);
+            $('#robodata').fadeIn(1000);
+        });
+         $('#eventshome').click(function(){
+             $(tr).fadeIn(1000);
+             $(cr).fadeIn(1000);
+            $('#technicaldata').fadeIn(1000);
+            $('#culturaldata').fadeIn(1000);
+            $('#metadata').hide();
+            $('#ecdata').hide();
+            $('#cpdata').hide();
+            $('#cedata').hide();
+            $('#eedata').hide();
+            $('#chdata').hide();
+            $('#mechdata').hide();
+            $(prodata).hide();
+            $(battledata).hide();
+            $(litraryensdata).hide();
+            $(dramaticsdata).hide();
+            $(musicdata).hide();
+            $(labywrinthdata).hide();
+            $(concevordata).hide();
+            $(fineartsdata).hide();
+            $(robodata).hide();
+            $(highdata).hide();
+        });
+        
+      $(pronites).click(function(){   
+            $(culturaldata).fadeOut(500);
+            $(cr).fadeOut(500);
+            $(prodata).fadeIn(1000);
+      });
+        $(highlights).click(function(){   
+            $(culturaldata).fadeOut(500);
+            $(cr).fadeOut(500);
+            $(highdata).fadeIn(1000);
+      });
+       $(battle).click(function(){   
+            $(culturaldata).fadeOut(500);
+            $(cr).fadeOut(500);
+            $(battledata).fadeIn(1000);
+      });
+     $(litraryens).click(function(){   
+            $(culturaldata).fadeOut(500);
+            $(cr).fadeOut(500);
+            $(litraryensdata).fadeIn(1000);
+      });
+         $(dramatics).click(function(){   
+            $(culturaldata).fadeOut(500);
+            $(cr).fadeOut(500);
+            $(dramaticsdata).fadeIn(1000);
+      });
+         $(music).click(function(){   
+            $(culturaldata).fadeOut(500);
+             $(cr).fadeOut(500);
+            $(musicdata).fadeIn(1000);
+      });
+         $(labywrinth).click(function(){   
+            $(culturaldata).fadeOut(500);
+             $(cr).fadeOut(500);
+            $(labywrinthdata).fadeIn(1000);
+      });
+         $(concevor).click(function(){   
+            $(culturaldata).fadeOut(500);
+             $(cr).fadeOut(500);
+            $(concevordata).fadeIn(1000);
+      });
+        $(finearts).click(function(){   
+            $(culturaldata).fadeOut(500);
+            $(cr).fadeOut(500);
+            $(fineartsdata).fadeIn(1000);
+      });
+      setInterval(function(){
+          $('#go-button-down').animate({
+              top : '+=10px'
+          },600);
+           $('#go-button-down').animate({
+                top : '-=10px'
+          },600);
+      },1200);
+    </script>
+</body>
+</html>
+    

@@ -1,0 +1,46 @@
+/* CSS3 STYLE GENERIC */
+.view {
+   width: 200px;
+   height: 200px;
+   margin: 10px;
+   float: left;
+   border: 5px solid #fff;
+   overflow: hidden;
+   position: relative;
+   border-radius: 50%;
+   text-align: center;
+   box-shadow: 0px 0px 5px #aaa;
+   cursor: default;
+   object-fit: contain;
+}
+.view .mask, .view .content {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+    border-radius: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+.view a.info {
+    display: inline;
+   min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
